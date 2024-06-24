@@ -48,7 +48,7 @@ int main() {
     cin >> n >> m;
     vector<int> c(n);
 
-    for (int i = 0; i < n; i++) {
+    for (int i=0; i<n; i++) {
         cin >> c[i];
     }
 
