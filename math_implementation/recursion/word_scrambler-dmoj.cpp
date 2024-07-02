@@ -17,8 +17,8 @@ void perm_gen(string& str_inp, int l, int r) {
             //swap the values at the two indexes (guarenteed unique)
             swap(str_inp[l], str_inp[i]); 
             //generate a permutation based on this
-            perm_gen(str_inp, l + 1, r); 
-            //unswap to go to next permutation 
+            perm_gen(str_inp, l + 1, r); //doesn't matter if it goes to l=1, i=1 before l=1, i=2 because that still gives same value when perm_gen is called again
+            //unswap to go back to previous permutation (go the other perm from there)
             swap(str_inp[l], str_inp[i]); 
         } 
     } 
