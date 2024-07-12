@@ -40,15 +40,11 @@ int main() {
     stack<int> togo;
 
     visited.emplace(a);
+    togo.push(a);
 
-    vector<int> vals = adjList[a];
-    for (auto val: vals) {
-        if (visited.find(val) == visited.end()) {
-            togo.emplace(val);
-        }
-    }
 
     int good = false;
+    vector<int> vals;
 
     while (!togo.empty()) {
         //if found desired value
@@ -59,7 +55,6 @@ int main() {
 
         //move onto next node
         int next = togo.top();
-        visited.emplace(next);
         togo.pop();
 
 
@@ -68,6 +63,7 @@ int main() {
         for (int i=0; i<vals.size(); i++) {
             if (visited.find(vals[i]) == visited.end()) {
                 togo.push(vals[i]);
+                visited.emplace(vals[i]);
             }
         }
 
