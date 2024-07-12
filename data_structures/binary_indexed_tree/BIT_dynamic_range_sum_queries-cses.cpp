@@ -27,13 +27,14 @@ void add(int idx, int n, ll bit[], int val) {
 }
 
 //O(logn)
-void update(int idx, int n, ll bit[], int val, vector<ll> x) {
+void update(int idx, int n, ll bit[], int val, vector<ll>& x) {
     ll temp = val - x[idx];
+    int temp2 = idx;
     while (idx<=n) {
         bit[idx] += temp;
         idx += (idx & (-idx));
     }
-    x[idx] = val;
+    x[temp2] = val;
 }
 
 int main() {
