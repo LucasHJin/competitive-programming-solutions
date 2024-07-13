@@ -86,6 +86,7 @@ int main() {
         for (int i=0; i<val.size(); i++) {
             if (visited.find(val[i]) == visited.end()) {
                 togo.push(val[i]);
+                visited.emplace(val[i]);
             }
         }
         //check if have reached other house
@@ -94,7 +95,6 @@ int main() {
             break;
         }
         //move current node to visited and remove from togo and move on
-        visited.emplace(togo.front());
         togo.pop();
     }
 
