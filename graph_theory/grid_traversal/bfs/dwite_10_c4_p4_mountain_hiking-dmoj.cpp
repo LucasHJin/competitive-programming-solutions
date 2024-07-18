@@ -50,14 +50,14 @@ int main() {
         string temp;
         cin >> temp;
 
-        //starting points
+        //starting points -> don't need to worry about overwriting other starting because visited true
         for (int i=0; i<10; i++) {
             visited[i][0] = true;
             distance[i][0] = 0;
             togo.push({i, 0});
         }
 
-
+        //will give lowest because it goes column by column
         while (!togo.empty()) {
             pair<int, int> curr_cell = togo.front();
             int x = curr_cell.first;
