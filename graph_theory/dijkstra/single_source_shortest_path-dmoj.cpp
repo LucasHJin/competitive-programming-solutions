@@ -46,7 +46,7 @@ int main() {
             //because for any other nodes, even if they reach it, they will be > already
         smallest_node.pop();
 
-        //if (d > dist[u]) continue; -> if not using visited
+        //if (curr_dist > dist[curr_node]) continue; -> if not using visited
         if (visited[curr_node]) {
             continue; //skip if already visited
         }
