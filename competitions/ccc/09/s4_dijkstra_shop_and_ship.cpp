@@ -7,6 +7,8 @@ typedef long long ll;
  
 using namespace std;
 
+//v^2 version of dijkstra with adj matrix
+
 int main() {
     cin.sync_with_stdio(0); cin.tie(0);
     int n, t, x, y, c, k, z, p, d;
