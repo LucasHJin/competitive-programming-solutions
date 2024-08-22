@@ -5,6 +5,8 @@ typedef long long ll;
  
 using namespace std;
 
+//topological sort with priority queue + cycle checking
+
 void addEdge(vector<vector<int>>& adjList, int x, int y) {
     adjList[x].push_back(y);
 }
