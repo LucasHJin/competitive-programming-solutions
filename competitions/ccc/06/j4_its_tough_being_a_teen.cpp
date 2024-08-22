@@ -106,7 +106,7 @@ int main() {
         vector<int> result;
         topologicalSort(adjList, incEdgeNum, result);
 
-        for (int task : result) {
+        for (int task: result) {
             cout << task << " ";
         }
         cout << endl;
