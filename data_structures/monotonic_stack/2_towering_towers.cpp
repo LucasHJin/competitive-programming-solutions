@@ -6,6 +6,8 @@ typedef long long ll;
  
 using namespace std;
 
+//useful for finding next largest/smallest element in a sequence
+
 int main() {
     cin.sync_with_stdio(0); cin.tie(0);
 

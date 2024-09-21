@@ -5,6 +5,7 @@ typedef long long ll;
  
 using namespace std;
 
+//2 pointer
 
 int main() {
     int n;

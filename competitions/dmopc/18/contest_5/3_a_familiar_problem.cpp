@@ -41,6 +41,8 @@ int main() {
 }
 */
 
+//2 pointer
+
 //method 2
 int main() {
     int n;
