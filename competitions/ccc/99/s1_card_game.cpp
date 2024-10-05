@@ -5,13 +5,6 @@ typedef long long ll;
  
 using namespace std;
 
-
-#include <iostream>
-#include <vector>
-#include <string>
-
-using namespace std;
-
 bool isHighCard(const string &card) {
     return card == "jack" || card == "queen" || card == "king" || card == "ace";
 }
